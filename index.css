@@ -1,0 +1,256 @@
+/* Global Styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar-light.bg-skyblue {
+    background-color: #4895ef;
+}
+@media (min-width: 768px) {
+    /* Your navbar styles with animations here */
+    /* Navbar Link Animation */
+.navbar-nav .nav-link {
+    position: relative; /* To position the pseudo-element */
+    color: #edf6f9; /* Default link color */
+    text-decoration: none; /* Remove default underline */
+    padding-bottom: 5px; /* Space for the underline */
+}
+
+/* Underline Effect */
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0; /* Start with zero width */
+    height: 2px; /* Height of the underline */
+    background: #d8f3dc; /* Change to your desired color */
+    transition: width 0.3s ease; /* Smooth width transition */
+    position: absolute;
+    left: 50%; /* Center it horizontally */
+    bottom: 0; /* Position it at the bottom */
+    transform: translateX(-50%); /* Center the underline */
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #d8f3dc; /* Change to your desired hover color */
+}
+
+/* Expand Underline on Hover */
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Expand underline to full width on hover */
+}
+
+}
+
+
+/* Sticky Navbar Styles */
+@media (min-width: 992px) { /* Desktop mode */
+    .navbar {
+        position: sticky; /* Make it sticky */
+        top: 0; /* Stick to the top of the viewport */
+        z-index: 1000; /* Ensure it's above other content */
+
+    }
+}
+
+
+#landing .profilepic {
+    object-fit: cover;
+    height: 400px;
+    object-position: 0 20%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Navbar Styles */
+.navbar-light.bg-skyblue {
+    background-color: #4895ef;
+}
+.class-1 {
+    list-style: none;
+    
+}
+.class-3 {
+    background-color: #4a4e69;
+    
+}
+.class-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.class-5 {
+    background-color: #c9ada7;
+    
+}
+.class-6 {
+    background-color: #22223b;
+    
+}
+
+.navbar-nav .nav-link {
+    color: #edf6f9;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d8f3dc;
+}
+
+/* Accordion Styles */
+.accordion-button {
+    background-color: #f2e9e4;
+}
+
+.accordion-body {
+    background-color: #f2e9e4;
+}
+
+/* Landing Section Styles */
+
+#landing {
+    background-color: #22223b;
+}
+
+
+/* Carousel Styles */
+
+.carousel-image {
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Project Section Styles */
+
+#project {
+    background-color: #4a4e69;
+}
+
+.card {
+    background-color: #333;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-subtitle {
+    color: #cccccc;
+}
+
+.card-text {
+    color: #ffffff;
+}
+
+/* Tools Section Styles */
+
+#tools {
+    background-color: #c9ada7;
+}
+
+.tool-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Contact Section Styles */
+
+#contact {
+    background-color: #22223b;
+}
+
+.form-label {
+    color: #ffffff;
+}
+
+.form-control {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.form-select {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.modal-content {
+    background-color: #333;
+}
+
+.modal-title {
+    color: #ffffff;
+}
+
+.modal-body {
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.btn-light:hover {
+    background-color: #f5f5f5;
+    color: #222;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+/* Carousel Image Styles */
+.carousel-image {
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Tools Icon (Large) */
+.tool-icon-large {
+    width: 150px;
+    height: auto;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+.form-control:focus, .form-select:focus {
+    border-color: #4a4e69;
+    box-shadow: 0 0 5px rgba(74, 78, 105, 0.5);
+}
+
+
